@@ -2,10 +2,10 @@
   "name": "be",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --watch src --ext ts --exec ts-node src/app.ts"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
