@@ -1,4 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js modules
+node_modules/
+dist/
 
-# dependencies
-/node_modules
+# Environment variables
+.env
