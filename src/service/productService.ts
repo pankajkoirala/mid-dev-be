@@ -10,7 +10,7 @@ export const getAllProduct = async (req: any, res: any, next: any) => {
   axiosClient
     .get(`products`)
     .then((data: any) => data.data)
-    .then((data: any) => res.send(data))
+    .then((data: any) => res.send({ message: "successful",success: true, payload: data }))
     .catch(
       (error: Error) =>
         new CustomError(
@@ -24,7 +24,7 @@ export const getproductById = (req: any, res: any, next: any) => {
   axiosClient
     .get(`products/${req?.params?.id}`)
     .then((data: any) => data.data)
-    .then((data: any) => res.send(data))
+    .then((data: any) => res.send({ message: "successful",success: true, payload: data }))
     .catch(
       (error: Error) =>
         new CustomError(
